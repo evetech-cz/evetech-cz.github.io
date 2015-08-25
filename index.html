@@ -6,7 +6,6 @@ xgroup: "navigation"
 xweight: 0
 ---
 
-{% include jumbotron.html %}
 <!--
 
 Bridge between career and education
@@ -40,48 +39,142 @@ learning without handicap
 <hr>
 -->
 
-<div class="container">
-<div class="row">
-    <div class="col-sm-4">
-        <div class="center-block text-center">
-            <span class="circle shadow">
-				<i class="fa fa-list-alt text-primary"></i>
-            </span>
+<div class="container-fluid aboutus-container" id="aboutus-container">
+    <h1><script>document.write(settedLanguage.aboutusH1Title);</script></h1>
+
+    <div class="container under-title-container">
+        <div id="hexagon-container">
+            <a href="#services-container" onclick='window.history.pushState("EVE Solution - Services", "EVE Solutions - Services", "./#services-container");'>
+                <div class="hexagon hidden-xs" id="hexagon-mobileApp"></div>
+            </a>
+            <a href="#services-container" onclick='window.history.pushState("EVE Solution - Services", "EVE Solutions - Services", "./#services-container");'>
+                <div class="hexagon hidden-xs" id="hexagon-webDevel"></div>
+            </a>
+            <a href="#services-container" onclick='window.history.pushState("EVE Solution - Services", "EVE Solutions - Services", "./#services-container");'>
+                <div class="hexagon hidden-xs" id="hexagon-education"></div>
+            </a>
         </div>
-        <h3>Wide range of courses</h3>
-        <ul>
-            <li>online courses with lector</li>
-            <li>e-learning with certified exams</li>
-        </ul>
-        <p></p>
-    </div>
-    
-    <div class="col-sm-4">
-        <div class="center-block text-center">
-            <span class="circle shadow">
-				<i class="fa fa-graduation-cap text-success"></i>
-            </span>
+        <div id="about-textarea">
+            <script>document.write(settedLanguage.aboutusText);</script>
         </div>
-        <h3>Learning without handicap</h3>
-        <ul>
-            <li>Access to course lessons from everywhere</li>
-            <li>Simple and clean interface</li>
-        </ul>
-        <p></p>
-    </div>
-    
-    <div class="col-sm-4">
-        <div class="center-block text-center">
-            <span class="circle shadow">
-				<i class="fa fa-certificate text-warning"></i>
-            </span>
-        </div>
-        <h3>Improve your career</h3>
-        <ul>
-            <li>Get registered certificate</li>
-            <li>Use proposed next courses</li>
-        </ul>
-        <p></p>
     </div>
 </div>
+
+<!-- TODO REFERENCES CONTAINER
+<div class="container-fluid references-container">
+    <h1><span class="yellow">WHAT WE HAVE</span> <span class="black">ALREADY DONE</span></h1>
+
+    <div class="container under-title-container">
+        <div id="reference-container-hexa">
+            <div class="white-hexagon" id="first-reference"></div>
+            <div class="white-hexagon" id="second-reference"></div>
+            <div class="white-hexagon" id="third-reference"></div>
+        </div>
+    </div>
+</div>
+-->
+
+<div class="container-fluid services-container" id="services-container">
+
+    <div class="h1-title"><script>document.write(settedLanguage.servicesH1Title);</script></div>
+
+    <div class="row">
+        <div class="col-md-4 service-collumn service-collumn-padding" id="first-service">
+            <div id="responsive-icon"></div>
+            <div class="service-textarea">
+                <div class="service-collumn-title"><script>document.write(settedLanguage.servicesWebDesignAndAppH2title);</script></div>
+                <script>document.write(settedLanguage.servicesWebDesignAndAppText);</script>
+            </div>
+        </div>
+        <div class="col-md-4 service-collumn service-collumn-padding">
+            <div id="education-icon"></div>
+            <div class="service-textarea">
+                <div class="service-collumn-title"><script>document.write(settedLanguage.servicesOnlineEducH2title);</script></div>
+                <script>document.write(settedLanguage.servicesOnlineEducText);</script>
+            </div>
+        </div>
+        <div class="col-md-4 service-collumn service-collumn-padding">
+            <div id="mobiledevel-icon"></div>
+            <div class="service-textarea">
+                <div class="service-collumn-title"><script>document.write(settedLanguage.servicesMobileAppH2title);</script></div>
+                <script>document.write(settedLanguage.servicesMobileAppText);</script>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="container-fluid team-container" id="team-container">
+    <h1><script>document.write(settedLanguage.teamH1Title);</script></h1>
+
+    <div id="team-container">
+        <div class="row row-centered">
+            <div class=".col-md-1 col-centered">
+            </div>
+            <div class=".col-md-2 col-centered">
+                <div class="team-member" id="member-ales">
+                    <!--<div class="team-icon team-linkedin-icon" style="top: 28px; left: 34px;"></div>
+                    <div class="team-icon team-mail-icon" style="top: 68px; left: 10px;"></div>-->
+
+                    <div class="team-icon team-linkedin-icon" style="top: 88px; left: 20px;"></div>
+                    <div class="team-icon team-mail-icon" style="top: 128px; left: 44px;"></div>
+                    <h2><span class="yellow">Aleš Holubec</span></h2>
+                    <div class="team-compose"><script>document.write(settedLanguage.alesFunc);</script></div>
+                    <div class="team-info">
+                        <script>document.write(settedLanguage.alesDescr);</script>
+                    </div>
+                </div>
+            </div>
+            <div class=".col-md-2 col-centered">
+                <div class="team-member" id="member-richard">
+
+                    <div class="team-icon team-linkedin-icon" style="top: 88px; left: 20px;"></div>
+                    <div class="team-icon team-mail-icon" style="top: 128px; left: 44px;"></div>
+                    <h2><span class="yellow">Richard Holaj</span></h2>
+                    <div class="team-compose"><script>document.write(settedLanguage.richardFunc);</script></div>
+                    <div class="team-info">
+                        <script>document.write(settedLanguage.richardDescr);</script>
+                    </div>
+                </div>
+            </div>
+            <div class=".col-md-2 col-centered">
+                <div class="team-member" id="member-honza">
+
+                    <div class="team-icon team-linkedin-icon" style="top: 88px; left: 20px;"></div>
+                    <div class="team-icon team-mail-icon" style="top: 128px; left: 44px;"></div>
+                    <h2><span class="yellow">Jan Tlamicha</span></h2>
+                    <div class="team-compose"><script>document.write(settedLanguage.honzaFunc);</script></div>
+                    <div class="team-info">
+                        <script>document.write(settedLanguage.honzaDescr);</script>
+                    </div>
+                </div>
+            </div>
+            <div class=".col-md-2 col-centered">
+                <div class="team-member" id="member-lukas">
+
+                    <div class="team-icon team-linkedin-icon" style="top: 88px; left: 20px;"></div>
+                    <div class="team-icon team-mail-icon" style="top: 128px; left: 44px;"></div>
+                    <h2><span class="yellow">Lukáš Materna</span></h2>
+                    <div class="team-compose"><script>document.write(settedLanguage.lukasFunc);</script></div>
+                    <div class="team-info">
+                        <script>document.write(settedLanguage.lukasDescr);</script>
+                    </div>
+                </div>
+            </div>
+            <div class=".col-md-2 col-centered">
+                <div class="team-member" id="member-monika">
+
+                    <div class="team-icon team-linkedin-icon" style="top: 88px; left: 20px;"></div>
+                    <div class="team-icon team-mail-icon" style="top: 128px; left: 44px;"></div>
+                    <h2><span class="yellow">Monika Styxová</span></h2>
+                    <div class="team-compose"><script>document.write(settedLanguage.monikaFunc);</script></div>
+                    <div class="team-info">
+                        <script>document.write(settedLanguage.monikaDescr);</script>
+                    </div>
+                </div>
+            </div>
+            <div class=".col-md-1 col-centered">
+            </div>
+        </div>
+    </div>
 </div>

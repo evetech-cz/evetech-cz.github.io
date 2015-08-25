@@ -1,218 +1,66 @@
-<header id="eveit-header" class="navbar navbar-inverse navbar-fixed-top" role="navigation" scroll-position="scroll" ng-class="{'eveit-header-small': scroll > 20}">
 
-    <div class="top-section-container top-section navbar-default">
+<!--[if lt IE 9]>
+<script>
+    document.createElement('video');
+</script>
+<![endif]-->
+<section class="screen-panel intro">
 
-        <div class="container ">
-            <div class="row">
-                <div class="col-sm-6">
-                    <a href="/" ng-click="goTop()">
-                        <span style="position: absolute; top: 0px; left: 210px; font-size: 30px; color: #FFFFFF;">
-<!--                                EVE of Virtual Education-->
-                            </span>
-                    </a>
-                </div>
-                <div class="col-sm-6">
-                    <div class="social">
-                        <a href="https://twitter.com/EVETeu" target="_blank">
-                            <div class="social-box">
-                                <i class="fa fa-twitter fa-2x"></i>
-                            </div>
-                        </a>
-                        <a href="https://google.com/+EVETeu" target="_blank">
-                            <div class="social-box">
-                                <i class="fa fa-google-plus fa-2x"></i>
-                            </div>
-                        </a>
-
-                        <a href="https://www.youtube.com/user/EVETeu" target="_blank">
-                            <div class="social-box">
-                                <i class="fa fa-youtube fa-2x"></i>
-                            </div>
-                        </a>
-                        <a href="http://www.facebook.com/eveit.eu" target="_blank">
-                            <div class="social-box">
-                                <i class="fa fa-facebook fa-2x"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <video autoplay poster="./video/background.jpg" id="bgvid" loop class="hidden-xs hidden-sm">
+        <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+        <source src="{{ site.url }}/video/Laptop_1_Videvo.webm" type="video/webm">
+        <source src="{{ site.url }}/video/Laptop_1_Videvo.mp4" type="video/mp4">
+    </video>
+    <div class="container-fluid" id="intro-page">
+        <div id="banner">
+            <img src="{{ site.url }}/css/images/big-banner.png" alt="EVE Solutions s.r.o." id="logo-banner">
+        </div>
+        <div id="intro-h1">
+            <h1><script>document.write(settedLanguage.title1);</script></h1><br>
+            <h1><script>document.write(settedLanguage.title2);</script></h1>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <!-- Main Menu -->
-                <nav class="xnavbar xnavbar-default xheader-2" role="navigation">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" Xdata-toggle="collapse" Xdata-target="#bs-example-navbar-collapse-1" ng-click="isCollapsed = !isCollapsed">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-
-                        <a href="/" ng-click="goTop()">
-                            <span class="navbar-brand eveit-brand">
-                                    <img class="eveit-logo" src="{{ " /img/eveit-logo1.png " | prepend: site.baseurl }}" alt="}{{ site.title }}">
-                                </span>
-                        </a>
-                    </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" collapse="isCollapsed">
-
-                        <div>
-
-                            <ul class="nav navbar-nav navbar-right">
-                                {% assign group = 'navigation' %}
-                                {% include pages_list.html %}
-                            </ul> 
-<!--
-                            <ul class="nav navbar-nav navbar-right">
-                                <li class="dropdown" ng-class="{active: routeSegment.startsWith('learning')}">
-                                    <a href="" class="dropdown-toggle" data-toggle="dropdown">Online vzdělávání
-                                            <b class="caret"></b>
-                                        </a>
-                                    <ul class="dropdown-menu">
-                                        <li ng-class="{active: routeSegment.startsWith('learning.learning')}">
-                                            <a href="/learning" ng-click="goTop()">Popis</a>
-                                        </li>
-                                        <li class="divider"></li>
-                                        <li>
-                                            <a href="" ng-click="setPath('/learning', 'courses')" smooth-scroll target="courses">Seznam přednášek</a>
-                                        </li>
-                                        <li>
-                                            <a href="" ng-click="setPath('/learning', 'prices')" smooth-scroll target="prices">Ceník</a>
-                                        </li>
-                                        <li>
-                                            <a href="" ng-click="setPath('/learning', 'payments')" smooth-scroll target="payments">Platby</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                {% assign group = 'team' %}
-                                {% include pages_list.html %}
-                            </ul>
--->
-
-                            
-<!--
-                            <ul class="nav navbar-nav">
-                                {% for node in site.pages %} {% if page.url == node.url %}
-                                <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a>
-                                </li>
-                                {% else %}
-                                <li><a href="{{node.url}}">{{node.title}}</a>
-                                </li>
-                                {% endif %} {% endfor %}
-                                
-                                {% for page in site.pages %} {% if page.title %}
-                                <li>
-                                    <a href="{{ page.url | prepend: site.baseurl }}" ng-class="{active: routeSegment.startsWith('erasmus')}">{{ page.title }}</a>
-                                </li>
-                                {% endif %} {% endfor %}
 
 
-                                <li class="dropdown" ng-class="{active: routeSegment.startsWith('learning')}">
-                                    <a href="" class="dropdown-toggle" data-toggle="dropdown">Online vzdělávání
-                                            <b class="caret"></b>
-                                        </a>
-                                    <ul class="dropdown-menu">
-                                        <li ng-class="{active: routeSegment.startsWith('learning.learning')}">
-                                            <a href="/learning" ng-click="goTop()">Popis</a>
-                                        </li>
-                                        <li class="divider"></li>
-                                        <li>
-                                            <a href="" ng-click="setPath('/learning', 'courses')" smooth-scroll target="courses">Seznam přednášek</a>
-                                        </li>
-                                        <li>
-                                            <a href="" ng-click="setPath('/learning', 'prices')" smooth-scroll target="prices">Ceník</a>
-                                        </li>
-                                        <li>
-                                            <a href="" ng-click="setPath('/learning', 'payments')" smooth-scroll target="payments">Platby</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="/erasmus" ng-class="{active: routeSegment.startsWith('erasmus')}">Erasmus +</a>
-                                </li>
-                                <li>
-                                    <a href="/articles" ng-class="{active: routeSegment.startsWith('articles')}">Komunitní aktivity</a>
-                                </li>
-                                <li class="dropdown" ng-class="{active: routeSegment.startsWith('about')}">
-                                    <a href="" class="dropdown-toggle" data-toggle="dropdown">O nás
-                                            <b class="caret"></b>
-                                        </a>
-                                    <ul class="dropdown-menu">
-                                        <li ng-class="{active: routeSegment.startsWith('about.about')}">
-                                            <a href="/about" ng-click="goTop()">Proč SEPPIA?</a>
-                                        </li>
-                                        <li class="divider"></li>
-                                        <li>
-                                            <a href="/about/members" ng-class="{active: routeSegment.contains('members')}">Členové sdružení</a>
-                                        </li>
-                                        <li>
-                                            <a href="/about/kontakt" ng-class="{active: routeSegment.contains('kontakt')}">Kontakt</a>
-                                        </li>
-                                        <li class="divider"></li>
-                                        <li>
-                                            <a href="/media" ng-class="{active: routeSegment.contains('media')}">Seppia v médiích</a>
-                                        </li>
-                                        <li>
-                                            <a href="/about/vyrocni-zpravy" ng-class="{active: routeSegment.contains('vyrocni-zpravy')}">Výroční zprávy</a>
-                                        </li>
-                                        <li class="divider"></li>
-                                        <li>
-                                            <a href="/about/stanovy" ng-class="{active: routeSegment.contains('stanovy')}">Stanovy</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="/about/about-eveit">[EN] About</a>
-                                </li>
-                            </ul>
--->
+</section>
+<section class="home">
 
-                            <!--                            <div ng-include="'app/login.html'"></div>-->
-
-
-                        </div>
-                        <!-- /.navbar-collapse -->
-                </nav>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse" id="main-nav">
+        <div class="container-float">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span active class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href=""><div class="navbar-brand-logo"><img src="./css/images/small-banner.png" id="small-logo" alt="EVE Solutions s.r.o. logo"></div></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <div class="nav-table">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#aboutus-container"
+                               onclick='window.history.pushState("EVE Solution - About Us", "EVE Solutions - About Us", "./#aboutus-container");'><script>document.write(settedLanguage.aboutusMenu);</script></a></li>
+                        <li><a href="#services-container"
+                               onclick='window.history.pushState("EVE Solution - Services", "EVE Solutions - Services", "./#services-container");'><script>document.write(settedLanguage.servicesMenu);</script></a></li>
+                        <li><a href="#team-container"
+                               onclick='window.history.pushState("EVE Solution - Team", "EVE Solutions - Team", "./#team-container");'><script>document.write(settedLanguage.teamMenu);</script></a></li>
+                        <li><a href="#contact-container"
+                               onclick='window.history.pushState("EVE Solution - Contact", "EVE Solutions - Contact", "./#contact-container");'><script>document.write(settedLanguage.contactsMenu);</script></a></li>
+                        <li></li>
+                    </ul>
                 </div>
             </div>
-
-            <!--            <div ng-include="'components/ui/notification/notification.html'"></div>-->
+            <!--Uncoment this while english language is added-->
+            <!--<div id="language-icon" actual=""</div>-->
+        <script>
+            $("#language-icon").attr("actual", localStorage.getItem("language"));
+            if (localStorage.getItem("language") == "cs")
+                $("#language-icon").css("background-position", "24px 0px");
+            else if (localStorage.getItem("language") == "en")
+                $("#language-icon").css("background-position", "0px 0px");
+        </script>
         </div>
-
-</header>
-
-
-<!--
-<header class="site-header">
-
-    <div class="wrapper">
-
-        <a class="site-title" href="{{ site.baseurl }}/"><img src="img/eveit.png" alt="{{ site.title }}">
-        </a>
-
-        <nav class="site-nav">
-            <a href="#" class="menu-icon">
-                <svg viewBox="0 0 18 15">
-                    <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z" />
-                    <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z" />
-                    <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z" />
-                </svg>
-            </a>
-
-            <div class="trigger">
-                {% for page in site.pages %} {% if page.title %}
-                <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a> {% endif %} {% endfor %}
-            </div>
-        </nav>
-
-    </div>
-
-</header>-->
+    </nav>
+    <!-- Fixed navbar -->
