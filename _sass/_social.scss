@@ -1,0 +1,40 @@
+/***** Social *****/
+
+.social {
+    float: right;
+    height: auto;
+    width: 100%
+}
+.social a {
+    color: #eee;
+}
+.social a:hover .social-box {
+    color: #333;
+    /*#18bc9c; /*#2c3e50;*/
+    background: #fff;
+}
+.social-box {
+//    font-size: 16px;
+    font-size: 10px;
+    border: 2px solid #eee;
+//    height: 40px;
+//    line-height: 47px;
+//    min-width: 40px;
+    height: 25px;
+    line-height: 28px;
+    min-width: 25px;
+    text-align: center;
+    float: right;
+    margin-left: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+.social-box i {
+    display: inline-block !important;
+}

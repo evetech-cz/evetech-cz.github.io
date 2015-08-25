@@ -1,0 +1,18 @@
+.circle {
+    display: inline-block;
+    height: 90px;
+    width: 90px;
+    color: white;
+    background-color: #eee;
+    text-align: center;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    border-radius: 45px;
+}
+.circle i {
+    margin-top: 20px;
+    font-size: 50px;
+}
+.shadow {
+    box-shadow: 0.1em 0.1em 0.1em #888;
+}

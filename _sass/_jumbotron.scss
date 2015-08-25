@@ -1,0 +1,62 @@
+/* Jumbotron pozadi */
+
+.bg {
+//    background: url('../img/invoice.jpg') no-repeat center center;
+    background: url('../img/mates-gray.jpg') no-repeat center center;
+    position: fixed;
+    width: 100%;
+//    height: 430px; 
+    height: 370px; 
+    // same height as jumbotron 
+    top: 35px;
+    left: 0;
+    z-index: -1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+*/
+}
+.bg:after {
+    content: "";
+    display: block;
+    height: 100%; 
+    width: 100%;
+//    opacity: 0.5;
+//    background: rgb(10, 56, 46)
+
+//    background:  rgba(129, 179, 58, 0.5);
+//    background:  rgba(179, 156, 58, 0.2);
+    background:  rgba(147, 191, 73, 0.83);
+//    background:  rgba(41, 36, 14, 0.5);
+    /*rgba(0, 0, 0, .9)*/
+    ;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.jumbotron {
+    margin-bottom: 0px;
+//    height: 430px;
+//    height: 400px;
+    height: 370px;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.1em;
+    background: transparent;
+//    margin-bottom: 20px;
+}
+.jumbotron h2 {
+} .jumbotron h3 {
+} body {
+    padding-top: 0px;
+//    padding-bottom: 20px;
+}

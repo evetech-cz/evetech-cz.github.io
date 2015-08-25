@@ -1,0 +1,36 @@
+/* SEPPIA Logo */
+
+.eveit-brand {
+    z-index: 1000;
+    max-height: 40px;
+    overflow: visible;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+//    top: -44px;
+    top: -25px;
+    left: -50px;
+    /*	left: 0px;*/
+    width: 200px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.eveit-logo {
+    /*	padding: 20px 0;*/
+    width: 200px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    /*
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+*/
+}
