@@ -56,7 +56,7 @@ $(function () { // wait for document ready
                     $(".fixed").attr("state", "relative");
                 } else {
                     //$(".fixed > .container-float > .navbar-header > a > .navbar-brand-logo").html(
-                      //  '<img src="./css/images/big-banner.png" id="small-logo" height="90px" alt="EVE Solutions s.r.o. logo">'
+                      //  '<img src="./css/images/big-banner.png" id="small-logo" height="90px" alt="EVE Technologies s.r.o. logo">'
                     //);
                     
                     $(".fixed > .container-float > .navbar-header > a > .navbar-brand-logo > #small-logo").stop().animate({

@@ -9,7 +9,8 @@
                     zoom: 15,
 
                     // The latitude and longitude to center the map (always required)
-                    center: new google.maps.LatLng(50.0795239, 14.4302956), // New York
+                    center: new google.maps.LatLng(50.0532713, 14.5140896), // Kamelova 3
+                    // center: new google.maps.LatLng(50.0795239, 14.4302956), // Opletalova
 
                     // How you would like to style the map. 
                     // This is where you would paste any style found on Snazzy Maps.
