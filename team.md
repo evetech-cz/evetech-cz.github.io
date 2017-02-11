@@ -77,7 +77,7 @@ weight: 4
     </div>
 </div>
 
-<div class="team row">
+<!--<div class="team row">
     <div class="col-xs-2">
         <img src="https://media.licdn.com/media/AAEAAQAAAAAAAAM0AAAAJGJjYjQ5MDAyLTgwMGItNDBiZi04N2U5LWJhNDAxNjYxYTVhYw.jpg" class="Ximg-responsive shadow img-team" alt="">
     </div>
@@ -123,6 +123,6 @@ weight: 4
                     <i class="fa fa-facebook-square fa-2x text-muted"></i>
         </p>
     </div>
-</div>
+</div>-->
 
 
