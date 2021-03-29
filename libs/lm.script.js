@@ -94,10 +94,10 @@ $(function () { // wait for document ready
                             .setClassToggle(".nav-table > ul > li:eq(2)", "active") // add class toggle
                             .addIndicators() // add indicators (requires plugin)
                             .addTo(controllerMenu);
-	        new ScrollMagic.Scene({triggerElement: ".map-container", duration: ($(".map-container").height() + $(".contact-container").height()) })
+	        /*new ScrollMagic.Scene({triggerElement: ".map-container", duration: ($(".map-container").height() + $(".contact-container").height()) })
                             .setClassToggle(".nav-table > ul > li:eq(3)", "active") // add class toggle
                             .addIndicators() // add indicators (requires plugin)
-                            .addTo(controllerMenu);
+                            .addTo(controllerMenu);*/
         });
         
         var vid = document.getElementById("bgvid");
